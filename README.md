@@ -62,7 +62,7 @@ optional arguments:
 The output files are in the JSON lines format:
 
 ```
-  {"qubits": 4, "true": -1.8426866160309918, "estimate": -1.8394723164727411, "estimated_error": 0.01613556904575243, "error": 0.0032142995582506995, "circuits": 15, "shots_per_circuit": 66, "shots": 990, "time_qc": 2.879150152206421, "time_post": 0.5117971897125244, "method": "Pauli", "counts": null, "name": "4q H2 jordan_wigner", "commit": "d59fe99", "exact_ground_state": false, "id": "MzZya4nhC6fQdvZsob332H", "timestamp": 1625040177.894622}
+{"qubits": 4, "true": -1.8426866160309918, "estimate": -1.8394723164727411, "estimated_error": 0.01613556904575243, "error": 0.0032142995582506995, "circuits": 15, "shots_per_circuit": 66, "shots": 990, "time_qc": 2.879150152206421, "time_post": 0.5117971897125244, "method": "Pauli", "counts": null, "name": "4q H2 jordan_wigner", "commit": "d59fe99", "exact_ground_state": false, "id": "MzZya4nhC6fQdvZsob332H", "timestamp": 1625040177.894622}
 {"qubits": 4, "true": -1.8426866160309918, "estimate": -1.8418662180482184, "estimated_error": 0.01523071106596722, "error": 0.0008203979827734464, "circuits": 15, "shots_per_circuit": 66, "shots": 990, "time_qc": 2.938889980316162, "time_post": 0.522057294845581, "method": "Pauli", "counts": null, "name": "4q H2 jordan_wigner", "commit": "d59fe99", "exact_ground_state": false, "id": "Xd9n4GGivADMxi8fT6CuZJ", "timestamp": 1625040177.956557}
 ...
 ```

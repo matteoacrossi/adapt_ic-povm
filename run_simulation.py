@@ -52,14 +52,41 @@ def dir_path(string):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     # parser.add_argument("--nqubits", "--nq", type=int)
-    parser.add_argument("--file", type=str, default="hamiltonians.pickle")
-    parser.add_argument("--hamiltonian", type=int)
-    parser.add_argument("--samples", type=int, default=100)
-    parser.add_argument("--shots", type=int, nargs="+")
-    parser.add_argument("--method", type=str)
-    parser.add_argument("--outfile", type=str)  # argparse.FileType('a'))
-    parser.add_argument("--exact", action="store_true")
-    parser.add_argument("--counts", action="store_true")
+    parser.add_argument(
+        "--file",
+        type=str,
+        default="hamiltonians.pickle",
+        help="The file with the Hamiltonians",
+    )
+    parser.add_argument("--hamiltonian", type=int, help="The id of the Hamiltonian")
+    parser.add_argument(
+        "--samples",
+        type=int,
+        default=100,
+        help="How many repetitions of the experiment",
+    )
+    parser.add_argument(
+        "--shots",
+        type=int,
+        nargs="+",
+        help="The shots to use for the measurement (multiple amounts of shots can be passed)",
+    )
+    parser.add_argument(
+        "--method",
+        type=str,
+        help="One of the methods: SIC-POVM, Pauli, Grouped_Pauli, Grad-POVM, Google-POVM, Grad-Google-POVM",
+    )
+    parser.add_argument(
+        "--outfile", type=str, help="Path to output file"
+    )  # argparse.FileType('a'))
+    parser.add_argument(
+        "--exact", action="store_true", help="Use the exact diagonalization state"
+    )
+    parser.add_argument(
+        "--counts",
+        action="store_true",
+        help="Store the measurement counts to file (for tomography)",
+    )
     args = parser.parse_args()
 
     commit = get_git_revision_short_hash()
