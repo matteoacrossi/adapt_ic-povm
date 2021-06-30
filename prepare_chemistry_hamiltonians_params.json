@@ -1,0 +1,242 @@
+[
+    {
+        "molecule": "H2",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "jordan_wigner"
+    },
+    {
+        "molecule": "H2",
+        "basis": "631g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "jordan_wigner"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "jordan_wigner"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": true,
+        "mapping": "jordan_wigner"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "jordan_wigner"
+    },
+    {
+        "molecule": "H2",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "parity"
+    },
+    {
+        "molecule": "H2",
+        "basis": "631g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "parity"
+    },
+    {
+        "molecule": "H2",
+        "basis": "631g",
+        "two_qubit_reduction": true,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "parity"
+    },
+    {
+        "molecule": "H2",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "bravyi_kitaev"
+    },
+    {
+        "molecule": "H2",
+        "basis": "631g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "bravyi_kitaev"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "parity"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": true,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "parity"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": true,
+        "z2symmetry_reduction": true,
+        "freeze_core": false,
+        "mapping": "parity"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": true,
+        "z2symmetry_reduction": true,
+        "freeze_core": true,
+        "mapping": "parity"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "bravyi_kitaev"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": true,
+        "freeze_core": false,
+        "mapping": "bravyi_kitaev"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": true,
+        "freeze_core": true,
+        "mapping": "bravyi_kitaev"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": true,
+        "freeze_core": true,
+        "mapping": "parity"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": true,
+        "freeze_core": false,
+        "mapping": "parity"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": true,
+        "mapping": "parity"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": true,
+        "freeze_core": false,
+        "mapping": "bravyi_kitaev"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": true,
+        "freeze_core": true,
+        "mapping": "bravyi_kitaev"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": true,
+        "mapping": "bravyi_kitaev"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "bravyi_kitaev"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "parity"
+    },
+    {
+        "molecule": "H2",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "neven"
+    },
+    {
+        "molecule": "H2",
+        "basis": "631g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "neven"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "neven"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": true,
+        "mapping": "neven"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": false,
+        "mapping": "neven"
+    }
+]
