@@ -36,7 +36,7 @@ Each entry in the file is a dictionary of the form:
  'name': '4q H2 parity'}
  ```
 
-The list of hamiltonians is shown in [Chemistry_hamiltonians_summary.ipynb].
+The list of hamiltonians is shown in (Chemistry_hamiltonians_summary.ipynb).
 
 The file `hamiltonians.pickle` is generated with `python preprare_chemistry_hamiltonians.py`. It will take a considerable amount of time and a workstation or cluster is recommended.
 
