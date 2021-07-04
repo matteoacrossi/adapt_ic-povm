@@ -139,7 +139,6 @@ def process_params(params, filename):
         + result_final["mapping"]
     )
 
-    # df.append(result_final)
     with FileLock(f"{filename}.lock"):
         try:
             with open(filename, "rb") as file:

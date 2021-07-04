@@ -79,7 +79,7 @@ The notebook [Figures.ipynb](./Figures.ipynb) generates the figures contained in
 
 ## Citation
 
-G. García-Pérez, M. A. C. Rossi, B. Sokolov, F. Tacchino, P. K. Barkoutsos, G. Mazzola, I. Tavernelli, S. Maniscalco, "Learning to measure: adaptive informationally complete POVMs for near-term quantum algorithms", arXiv:2104.00569 (2021)
+G. García-Pérez, M. A. C. Rossi, B. Sokolov, F. Tacchino, P. K. Barkoutsos, G. Mazzola, I. Tavernelli, S. Maniscalco, "Learning to measure: adaptive informationally complete POVMs for near-term quantum algorithms", [arXiv:2104.00569](https://arxiv.org/abs/2104.00569) (2021)
 
 ```
 @misc{garciaperez2021learning,
