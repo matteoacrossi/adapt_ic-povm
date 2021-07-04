@@ -36,7 +36,7 @@ Each entry in the file is a dictionary of the form:
  'name': '4q H2 parity'}
  ```
 
-The list of hamiltonians is shown in [Chemistry_hamiltonians_summary.ipynb]().
+The list of hamiltonians is shown in [Chemistry_hamiltonians_summary.ipynb](./Chemistry_hamiltonians_summary.ipynb).
 
 The file `hamiltonians.pickle` is generated with `python preprare_chemistry_hamiltonians.py`. It will take a considerable amount of time and a workstation or cluster is recommended.
 
@@ -75,3 +75,19 @@ A convenience script `process_raw_data.py` joins multiple files, adds Hamiltonia
 python process_raw_data.py 'raw_data/*.txt' --hamiltonians hamiltonians.pickle -o data/chemistry_data.feather
 ```
 
+The notebook [Figures.ipynb](./Figures.ipynb) generates the figures contained in the published paper
+
+## Citation
+
+G. García-Pérez, M. A. C. Rossi, B. Sokolov, F. Tacchino, P. K. Barkoutsos, G. Mazzola, I. Tavernelli, S. Maniscalco, "Learning to measure: adaptive informationally complete POVMs for near-term quantum algorithms", arXiv:2104.00569 (2021)
+
+```
+@misc{garciaperez2021learning,
+      title={Learning to measure: adaptive informationally complete POVMs for near-term quantum algorithms},
+      author={Guillermo Garc\'ia-P\'erez and Matteo A. C. Rossi and Boris Sokolov and Francesco Tacchino and Panagiotis Kl. Barkoutsos and Guglielmo Mazzola and Ivano Tavernelli and Sabrina Maniscalco},
+      year={2021},
+      eprint={2104.00569},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+```
