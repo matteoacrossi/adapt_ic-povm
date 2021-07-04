@@ -45,6 +45,7 @@ nest-asyncio==1.5.1
 networkx==2.5.1
 ntlm-auth==1.5.0
 numpy==1.21.0
+pandarallel==1.5.2
 pandas==1.2.5
 parso==0.8.2
 pathspec==0.8.1
@@ -84,6 +85,7 @@ seaborn==0.11.1
 shortuuid==1.0.1
 six==1.16.0
 sympy==1.8
+tabulate==0.8.9
 threadpoolctl==2.1.0
 toml==0.10.2
 tornado==6.1
