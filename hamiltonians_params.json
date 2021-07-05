@@ -238,5 +238,45 @@
         "z2symmetry_reduction": false,
         "freeze_core": false,
         "mapping": "neven"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": true,
+        "mapping": "neven"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": false,
+        "freeze_core": true,
+        "mapping": "jordan_wigner"
+    },
+    {
+        "molecule": "LiH",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": true,
+        "freeze_core": true,
+        "mapping": "jordan_wigner"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": true,
+        "freeze_core": false,
+        "mapping": "jordan_wigner"
+    },
+    {
+        "molecule": "H2O",
+        "basis": "sto3g",
+        "two_qubit_reduction": false,
+        "z2symmetry_reduction": true,
+        "freeze_core": true,
+        "mapping": "jordan_wigner"
     }
 ]
