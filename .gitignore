@@ -131,3 +131,4 @@ dmypy.json
 data/
 raw_data/
 logs/
+figures/
