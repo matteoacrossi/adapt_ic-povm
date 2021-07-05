@@ -1,6 +1,10 @@
 # adapt_ic-povm
-Learning to measure: adaptive informationally complete POVMs for near-term quantum algorithms
+Code used to produce the results of the paper
+G. García-Pérez, M. A. C. Rossi, B. Sokolov, F. Tacchino, P. K. Barkoutsos, G. Mazzola, I. Tavernelli, S. Maniscalco, "Learning to measure: adaptive informationally complete POVMs for near-term quantum algorithms", [arXiv:2104.00569](https://arxiv.org/abs/2104.00569) (2021)
 
+The code uses qiskit 0.23 for simulating a near term quantum device, generating qubit Hamiltonian for small molecules and running VQE.
+
+NOTE: The simulations are quite demanding, especially for large molecules. The data was generated using a HPC cluster.
 
 ## Installation
 This repository requires Python 3 (tested with Python 3.8.5). Install the prerequisites with
@@ -75,7 +79,13 @@ A convenience script `process_raw_data.py` joins multiple files, adds Hamiltonia
 python process_raw_data.py 'raw_data/*.txt' --hamiltonians hamiltonians.pickle -o data/chemistry_data.feather
 ```
 
-The notebook [Figures.ipynb](./Figures.ipynb) generates the figures contained in the published paper
+The notebook [Figures.ipynb](./Figures.ipynb) generates the figures contained in the published paper.
+
+### Tomography
+
+For producing the results related to k-RDM tomography, all the counts coming from the measurements need to be stored. This can be achieved with the `--counts` flag of `run_simulation.py`.
+
+The data used for the paper is stored in the JSON Lines file `counts_data.txt`. The data can be processed using `python tomography_script.py`.
 
 ## Citation
 
