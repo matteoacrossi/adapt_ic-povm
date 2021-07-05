@@ -7,10 +7,18 @@ The code uses qiskit 0.23 for simulating a near term quantum device, generating 
 NOTE: The simulations are quite demanding, especially for large molecules. The data was generated using a HPC cluster.
 
 ## Installation
-This repository requires Python 3 (tested with Python 3.8.5). Install the prerequisites with
+This repository requires Python 3 (tested with Python 3.8.5). Since we need to patch the qiskit aqua module in order to add the JKMN mapping, we recommend creating a virtual environment.
+
+Install the prerequisites with
 
 ```
 pip install -r requirements.txt
+```
+
+Apply the patch to add the JKMN mapping
+
+```
+pypatch apply neven.patch qiskit
 ```
 
 ## Usage
