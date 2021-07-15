@@ -8,4 +8,4 @@
 #SBATCH --output=logs/%j.out
 
 source ./env/bin/activate
-python prepare_chemistry_hamiltonians.py
+python prepare_h_chain_hamiltonians.py
