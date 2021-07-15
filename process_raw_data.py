@@ -51,4 +51,5 @@ if __name__ == "__main__":
     )
 
     print(df.info())
+    df["commit"] = df["commit"].astype(str)
     df.to_feather(args.output)
