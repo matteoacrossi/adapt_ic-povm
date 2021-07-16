@@ -111,8 +111,6 @@ class POVMOperator(WeightedPauliOperator):
             print("POVM parameter array:", self.param_array)
             raise (ex)
 
-        self._bk_prod_cache = {}
-
     @property
     def num_qubits(self):
         """Number of qubits of the operator (excluding auxiliary qubits)
@@ -243,11 +241,7 @@ class POVMOperator(WeightedPauliOperator):
         return b_prod
 
     def _b_matrix_prod_array(self, bit_string):
-        if bit_string not in self._bk_prod_cache:
-            w_k = np.array([self._b_matrix_prod(ki, bit_string) for ki in self._k])
-            self._bk_prod_cache[bit_string] = w_k
-
-        return self._bk_prod_cache[bit_string]
+        return np.array([self._b_matrix_prod(ki, bit_string) for ki in self._k])
 
     def evaluate_with_result(self, result, statevector_mode):
         """
@@ -305,7 +299,6 @@ class POVMOperator(WeightedPauliOperator):
         second_moment = 0.0
 
         for bitstr in simplified_counts:
-            # Check cache for current bitstring
             b_array = self._b_matrix_prod_array(bitstr)
 
             first_moment += simplified_counts[bitstr] * np.dot(self._c_k, b_array)
