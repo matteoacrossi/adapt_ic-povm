@@ -105,11 +105,12 @@ def kwise_fidelity(x, k=2):
 
 
 if __name__ == "__main__":
-    pandarallel.initialize(nb_workers=10)
+    pandarallel.initialize(nb_workers=20)
 
     hamiltonians_df = pd.DataFrame(pd.read_pickle("hamiltonians.pickle"))
 
-    df = pd.read_json("data/counts_data.txt", lines=True)
+    df = pd.read_json("data/tomography_counts_data.jsonl", lines=True)
+
     df = pd.merge(
         df,
         hamiltonians_df[["molecule", "mapping", "name", "vqe_circuit"]],
