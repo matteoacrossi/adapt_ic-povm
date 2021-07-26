@@ -9,6 +9,13 @@ NOTE: The simulations are quite demanding, especially for large molecules. The d
 ## Installation
 This repository requires Python 3 (tested with Python 3.8.5). Since we need to patch the qiskit aqua module in order to add the JKMN mapping, we recommend creating a virtual environment.
 
+Clone the repository and move to the folder
+
+```
+https://github.com/matteoacrossi/adapt_ic-povm.git
+cd adapt_ic-povm
+```
+
 Install the prerequisites with
 
 ```
@@ -23,9 +30,23 @@ pypatch apply neven.patch qiskit
 
 ## Usage
 
+### Downloading the data
+
+The data used to reproduce the results presented in the paper is available at [https://doi.org/10.5281/zenodo.5137227](https://doi.org/10.5281/zenodo.5137227). Download the
+file `data.tar` and extract it in the repository folder:
+
+```
+wget https://zenodo.org/record/5137227/files/data.tar?download=1
+```
+
+A folder `data/` will be created.
+
 ### Example Hamiltonians
 
-The file `hamiltonians.pickle` contains a list of example chemistry Hamiltonians for the H2, LiH and H2O molecules,
+The example Hamiltonians are generated with `python preprare_chemistry_hamiltonians.py`. It will take a considerable amount of time and a workstation or cluster is recommended.
+The molecules are defined in the file `preprare_chemistry_hamiltonians.py`.
+
+The file `data/hamiltonians.pickle` contains a list of example chemistry Hamiltonians for the H2, LiH and H2O molecules,
 with different bases, symmetries and fermion-to-qubit mappings. For each Hamiltonian, the exact ground state and an approximated
 ground state found with VQE (using qiskit 0.23.6 default settings) are stored in the file.
 
@@ -48,9 +69,12 @@ Each entry in the file is a dictionary of the form:
  'name': '4q H2 parity'}
  ```
 
+Similarly, the file `data/hamiltonians_h_chain.pickle` contains a list of Hamiltonians for hydrogen chains of various length. The file can be generated with `python prepare_h_chain_hamiltonians.py`.
+
+
 The list of hamiltonians is shown in [Hamiltonians_summary.ipynb](./Hamiltonians_summary.ipynb).
 
-The file `hamiltonians.pickle` is generated with `python preprare_chemistry_hamiltonians.py`. It will take a considerable amount of time and a workstation or cluster is recommended.
+
 
 ### Simulations
 
@@ -87,13 +111,17 @@ A convenience script `process_raw_data.py` joins multiple files, adds Hamiltonia
 python process_raw_data.py 'raw_data/*.txt' --hamiltonians hamiltonians.pickle -o data/chemistry_data.feather
 ```
 
-The notebook [Figures.ipynb](./Figures.ipynb) generates the figures contained in the published paper.
 
 ### Tomography
 
 For producing the results related to k-RDM tomography, all the counts coming from the measurements need to be stored. This can be achieved with the `--counts` flag of `run_simulation.py`.
 
 The data used for the paper is stored in the JSON Lines file `counts_data.txt`. The data can be processed using `python tomography_script.py`.
+
+### Figures
+
+The notebook [Figures.ipynb](./Figures.ipynb) generates all the figures contained in the published paper from the data available at [https://doi.org/10.5281/zenodo.5137227](https://doi.org/10.5281/zenodo.5137227).
+
 
 ## Citation
 
