@@ -37,6 +37,7 @@ file `data.tar` and extract it in the repository folder:
 
 ```
 wget https://zenodo.org/record/5137227/files/data.tar?download=1
+tar -xvf data.tar
 ```
 
 A folder `data/` will be created.
