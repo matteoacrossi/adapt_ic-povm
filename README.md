@@ -36,7 +36,7 @@ The data used to reproduce the results presented in the paper is available at [h
 file `data.tar` and extract it in the repository folder:
 
 ```
-wget https://zenodo.org/record/5137227/files/data.tar?download=1
+wget https://zenodo.org/record/5137227/files/data.tar
 tar -xvf data.tar
 ```
 
