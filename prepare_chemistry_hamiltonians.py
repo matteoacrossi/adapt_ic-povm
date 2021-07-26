@@ -152,9 +152,9 @@ def process_params(params, filename):
 
 
 if __name__ == "__main__":
-    hamiltonian_parameters = json.load(open("hamiltonians_params.json"))
+    hamiltonian_parameters = json.load(open("data/hamiltonians_params.json"))
 
-    filename = "hamiltonians.pickle"
+    filename = "data/hamiltonians.pickle"
 
     if os.path.exists(filename):
         print(f"File {filename} exists.")

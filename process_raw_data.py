@@ -17,7 +17,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--hamiltonians",
         type=str,
-        default="hamiltonians.pickle",
+        default="data/hamiltonians.pickle",
         help="File with the Hamiltonians",
     )
     args = parser.parse_args()

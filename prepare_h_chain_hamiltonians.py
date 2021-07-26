@@ -176,7 +176,7 @@ if __name__ == "__main__":
         for mapping in ["parity", "bravyi_kitaev", "neven", "jordan_wigner"]:
             hamiltonian_parameters.append({"qubits": qubits, "mapping": mapping})
 
-    filename = "hamiltonians_h_chain_jw.pickle"
+    filename = "data/hamiltonians_h_chain.pickle"
 
     if os.path.exists(filename):
         print(f"File {filename} exists.")
