@@ -212,6 +212,7 @@ class POVMEstimator(Estimator):
         exact,
         backend=Aer.get_backend("qasm_simulator"),
         return_counts=False,
+        povm_params=None
     ):
         """Instantiates a PauliEstimator
         Args:
@@ -228,7 +229,7 @@ class POVMEstimator(Estimator):
                 qc, qubitOp, exact, backend=backend, return_counts=return_counts
             )
         elif isinstance(qubitOp, WeightedPauliOperator):
-            op = POVMOperator(qubitOp)
+            op = POVMOperator(qubitOp, povm_params=povm_params)
             super().__init__(
                 qc, op, exact, backend=backend, return_counts=return_counts
             )
