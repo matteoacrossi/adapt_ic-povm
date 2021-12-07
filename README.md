@@ -4,7 +4,7 @@ G. García-Pérez, M. A. C. Rossi, B. Sokolov, F. Tacchino, P. K. Barkoutsos, G.
 
 The code uses qiskit 0.23 for simulating a near term quantum device, generating qubit Hamiltonian for small molecules and running VQE.
 
-> NOTE: The simulations are quite demanding, especially for large molecules. The data was generated using a HPC cluster, and is openly available on [Zenodo.org](https://doi.org/10.5281/zenodo.5137227).
+> NOTE: The simulations are quite demanding, especially for large molecules. The data was generated using a HPC cluster, and is openly available on [Zenodo.org](https://doi.org/10.5281/zenodo.5759030).
 
 ## Installation
 This repository requires Python 3 (tested with Python 3.8.5). Since we need to patch the qiskit aqua module in order to add the JKMN mapping, we recommend creating a virtual environment.
@@ -32,7 +32,7 @@ pypatch apply neven.patch qiskit
 
 ### Downloading the data
 
-The data used to reproduce the results presented in the paper is available at [https://doi.org/10.5281/zenodo.5137227](https://doi.org/10.5281/zenodo.5137227). Download the
+The data used to reproduce the results presented in the paper is available at [https://doi.org/10.5281/zenodo.5759030](https://doi.org/10.5281/zenodo.5759030). Download the
 file `data.tar` and extract it in the repository folder:
 
 ```
