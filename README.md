@@ -1,6 +1,6 @@
 # adapt_ic-povm
 Code used to produce the results of the paper
-G. García-Pérez, M. A. C. Rossi, B. Sokolov, F. Tacchino, P. K. Barkoutsos, G. Mazzola, I. Tavernelli, S. Maniscalco, "Learning to measure: adaptive informationally complete POVMs for near-term quantum algorithms", [arXiv:2104.00569](https://arxiv.org/abs/2104.00569) (2021)
+G. García-Pérez, M. A. C. Rossi, B. Sokolov, F. Tacchino, P. K. Barkoutsos, G. Mazzola, I. Tavernelli, S. Maniscalco, "Learning to Measure: Adaptive Informationally Complete Generalized Measurements for Quantum Algorithms", [PRX Quantum 2, 040342 (2021)](https://doi.org/10.1103/PRXQuantum.2.040342).
 
 The code uses qiskit 0.23 for simulating a near term quantum device, generating qubit Hamiltonian for small molecules and running VQE.
 
@@ -12,7 +12,7 @@ This repository requires Python 3 (tested with Python 3.8.5). Since we need to p
 Clone the repository and move to the folder
 
 ```
-https://github.com/matteoacrossi/adapt_ic-povm.git
+git clone https://github.com/matteoacrossi/adapt_ic-povm.git
 cd adapt_ic-povm
 ```
 
@@ -36,7 +36,7 @@ The data used to reproduce the results presented in the paper is available at [h
 file `data.tar` and extract it in the repository folder:
 
 ```
-wget https://zenodo.org/record/5137227/files/data.tar
+wget https://zenodo.org/record/5759030/files/data.tar
 tar -xvf data.tar
 ```
 
@@ -121,20 +121,25 @@ The data used for the paper is stored in the JSON Lines file `counts_data.txt`. 
 
 ### Figures
 
-The notebook [Figures.ipynb](./Figures.ipynb) generates all the figures contained in the published paper from the data available at [https://doi.org/10.5281/zenodo.5137227](https://doi.org/10.5281/zenodo.5137227).
-
+The notebook [Figures.ipynb](./Figures.ipynb) generates all the figures contained in the published paper from the data available at [https://doi.org/10.5281/zenodo.5759030](https://doi.org/10.5281/zenodo.5759030).
 
 ## Citation
 
-G. García-Pérez, M. A. C. Rossi, B. Sokolov, F. Tacchino, P. K. Barkoutsos, G. Mazzola, I. Tavernelli, S. Maniscalco, "Learning to measure: adaptive informationally complete POVMs for near-term quantum algorithms", [arXiv:2104.00569](https://arxiv.org/abs/2104.00569) (2021)
+G. García-Pérez, M. A. C. Rossi, B. Sokolov, F. Tacchino, P. K. Barkoutsos, G. Mazzola, I. Tavernelli, S. Maniscalco, "Learning to Measure: Adaptive Informationally Complete Generalized Measurements for Quantum Algorithms", [*PRX Quantum* **2**, 040342 (2021)](https://doi.org/10.1103/PRXQuantum.2.040342).
 
 ```
 @misc{garciaperez2021learning,
-      title={Learning to measure: adaptive informationally complete POVMs for near-term quantum algorithms},
-      author={Guillermo Garc\'ia-P\'erez and Matteo A. C. Rossi and Boris Sokolov and Francesco Tacchino and Panagiotis Kl. Barkoutsos and Guglielmo Mazzola and Ivano Tavernelli and Sabrina Maniscalco},
-      year={2021},
-      eprint={2104.00569},
-      archivePrefix={arXiv},
-      primaryClass={quant-ph}
+        title = {Learning to Measure: Adaptive Informationally Complete Generalized Measurements for Quantum Algorithms},
+  author = {Garc\'{\i}a-P\'erez, Guillermo and Rossi, Matteo A.C. and Sokolov, Boris and Tacchino, Francesco and Barkoutsos, Panagiotis Kl. and Mazzola, Guglielmo and Tavernelli, Ivano and Maniscalco, Sabrina},
+  journal = {PRX Quantum},
+  volume = {2},
+  issue = {4},
+  pages = {040342},
+  numpages = {17},
+  year = {2021},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PRXQuantum.2.040342},
+  url = {https://link.aps.org/doi/10.1103/PRXQuantum.2.040342}
 }
 ```
